@@ -6,17 +6,7 @@ include_once './core/connexion.php';
 
 include_once './core/request.php';
 
-$query=$bdd->prepare('SELECT pseudo FROM profils');
-$query->execute();
-$data=$query->fetch( PDO::FETCH_ASSOC );
-
-if (isset($_POST['pseudo'])) {
-
-echo "Le pseudo existe déjà";
-
-}
-
-else echo 
+echo 
 
 '<!DOCTYPE html>
 <html>
